@@ -1,0 +1,11 @@
+<mat-sidenav-container class="page-sidenav-container">
+  <mat-sidenav mode="side" opened>
+    <mat-nav-list>
+      <a mat-list-item (click)="auth.login()" *ngIf="!auth.loggedIn">Log In</a>
+      <a mat-list-item (click)="auth.logout()" *ngIf="auth.loggedIn">Log Out</a>
+      <a mat-list-item routerLink="/natural-observations" routerLinkActive="active">Natural Observations</a>
+      <a mat-list-item routerLink="/senderas" routerLinkActive="active">Senderas</a>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content><router-outlet></router-outlet></mat-sidenav-content>
+</mat-sidenav-container>

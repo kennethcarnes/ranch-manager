@@ -1,0 +1,6 @@
+query GetObservationName($observation_id: Int!) {
+  observations_by_pk(observation_id: $observation_id) {
+    observation_id
+    name
+  }
+}

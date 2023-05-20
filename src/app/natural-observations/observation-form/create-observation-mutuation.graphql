@@ -1,0 +1,6 @@
+mutation insert_single_observation($object: observations_insert_input! ) {
+  insert_observations_one(object: $object) {
+    observation_id
+    name
+  }
+}

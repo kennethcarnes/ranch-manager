@@ -1,0 +1,5 @@
+mutation delete_observation($observation_id: Int!) {
+  delete_observations_by_pk(observation_id: $observation_id) {
+    observation_id
+  }
+}

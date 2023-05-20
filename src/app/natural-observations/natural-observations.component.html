@@ -1,0 +1,13 @@
+<span class="obs-wrapper">
+  <ul>
+    <li class="ob-item-wrapper" *ngFor="let observation of observations">
+      {{observation.name}}
+      <button (click)="deleteObservation(observation.observation_id)" mat-button>🗑</button>
+      <button mat-button routerLink="/natural-observations/{{observation.observation_id}}/edit">✏️</button>
+    </li>
+  </ul>
+  <button mat-button routerLink="/natural-observations/new">Add new observation</button>
+</span>
+
+
+

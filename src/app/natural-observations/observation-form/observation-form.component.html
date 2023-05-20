@@ -1,0 +1,12 @@
+<div  class="main">
+  <mat-form-field>
+    <mat-label>{{observationId ? "Edit" : "New"}} Observation</mat-label>
+      <input matInput type="text"  [formControl]="observationName">
+  </mat-form-field>
+
+  <p>
+    <button mat-button (click)="observationId ? update() : insert()" type="submit">Submit</button>
+  </p>
+</div>
+
+

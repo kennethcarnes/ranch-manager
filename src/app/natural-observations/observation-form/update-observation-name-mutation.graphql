@@ -1,0 +1,5 @@
+mutation UpdateObservationName($observation_id: Int!, $name: String!) {
+  update_observations_by_pk(pk_columns: {observation_id: $observation_id}, _set: { name: $name }) {
+    observation_id
+  }
+}

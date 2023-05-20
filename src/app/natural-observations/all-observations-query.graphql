@@ -1,0 +1,7 @@
+query AllObservations {
+  observations {
+    observation_id
+    created_at
+    name
+  }
+}

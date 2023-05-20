@@ -1,0 +1,6 @@
+query AllWidgets {
+  widgets {
+    widget_id
+    name
+  }
+}
